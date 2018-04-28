@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { observer, inject } from 'mobx-react';
 import { Button } from 'antd';
 
-import { EditTestInput}  from '../../components/inputs/edit-test';
-import { EditQuestionInput}  from '../../components/inputs/edit-question';
+import { EditTestInput}  from '../../components/inputs/edit-test-input';
+import { EditQuestionInput}  from '../../components/inputs/edit-question-input';
 
 import { TestModel } from '../../models/test-model';
 import { QuestionModel } from '../../models/question-model';

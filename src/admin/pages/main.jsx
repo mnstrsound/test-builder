@@ -4,8 +4,8 @@ import {
     Button
 } from 'antd';
 
-import { TestCardView}  from '../components/views/test-card';
-import { EditTestInput}  from '../components/inputs/edit-test';
+import { TestCardView}  from '../components/views/test-card-view';
+import { EditTestInput}  from '../components/inputs/edit-test-input';
 
 const getStores = ({
    questionsStore,

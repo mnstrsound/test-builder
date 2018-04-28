@@ -1,1 +1,1 @@
-export { EditQuestionInput } from './inputs/edit-question';
+export { EditQuestionInput } from './inputs/edit-question-input';

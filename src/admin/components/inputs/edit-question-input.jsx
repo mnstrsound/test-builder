@@ -9,7 +9,7 @@ import { observer } from 'mobx-react';
 
 const { TextArea } = Input;
 
-import { AnswerInput } from './answer';
+import { AnswerInput } from './answer-input';
 
 @observer
 class EditQuestionInput extends Component {
