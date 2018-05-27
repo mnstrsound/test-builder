@@ -3,7 +3,7 @@ import { Input, Card, Button } from 'antd';
 import { observer } from 'mobx-react';
 
 import { AnswerService } from '../../services/answer-service';
-import { EditQuestionInput } from './inputs/edit-question-input';
+import { EditQuestionInput } from './inputs/edit-question-input/edit-question-input';
 import { SearchQuestion } from './inputs/search-question';
 import { TestModel } from '../models/test-model';
 import { QuestionModel } from '../models/question-model';

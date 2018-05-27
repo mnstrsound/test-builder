@@ -1,13 +1,13 @@
-import { RouterStore } from 'mobx-react-router'
+import { RouterStore } from 'mobx-react-router';
 import { TestsStore } from './tests-store';
-import { QuestionsStore } from './questions-store';
+import { UsersStore } from './users-store';
 
 const testsStore = new TestsStore();
-const questionsStore = new QuestionsStore();
+const usersStore = new UsersStore();
 const routerStore = new RouterStore();
 
 export default () => ({
-    questionsStore,
     testsStore,
+    usersStore,
     routerStore
 });

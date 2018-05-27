@@ -17,7 +17,8 @@ const TestSchema = new Schema({
                 }
             ]
         }
-    ]
+    ],
+    usersIds: [String]
 });
 
 const TestModel = mongoose.model('Test', TestSchema);

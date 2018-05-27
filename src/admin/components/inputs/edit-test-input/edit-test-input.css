@@ -1,0 +1,5 @@
+.edit-test-input {
+    &__title-input {
+        margin-bottom: 10px;
+    }
+}

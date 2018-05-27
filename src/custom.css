@@ -1,0 +1,6 @@
+.ant {
+    &-input {
+        height: 40px;
+        min-height: auto !important;
+    }
+}

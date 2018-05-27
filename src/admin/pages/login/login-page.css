@@ -1,0 +1,8 @@
+.login-page {
+    height: 100vh;
+    display: flex;
+
+    &__form {
+        margin: auto;
+    }
+}

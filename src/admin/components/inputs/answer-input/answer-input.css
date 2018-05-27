@@ -1,0 +1,22 @@
+.answer-input {
+    &__remove-icon {
+        margin-right: 10px;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    &__is-correct-input,
+    &__content-input,
+    &__remove-icon {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &__content-input {
+        width: 50%;
+    }
+
+    &__is-correct-input {
+        margin-left: 20px;
+    }
+}

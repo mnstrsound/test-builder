@@ -1,12 +1,13 @@
 import axios from 'axios';
 
+import { getAuthHeader } from '../utils/get-auth-header';
+
 const serviceBuilder = route => ({
-    findAll: async () => await axios.get(`/${route}`),
-    findLike: async data => await axios.get(`/${route}/like${Object.keys(data).reduce((acc, key, index) => `${index === 0 ? '?' : '&'}${key}=${data[key]}`, '')}`),
-    findOne: async id => await axios.get(`/${route}/${id}`),
-    create: async data => await axios.post(`/${route}`, data),
-    update: async (id, data) => await axios.put(`/${route}/${id}`, data),
-    delete: async id => await axios.delete(`/${route}/${id}`)
+    findAll: async () => await axios.get(`/${route}`, { headers: await getAuthHeader() }),
+    findOne: async id => await axios.get(`/${route}/${id}`, { headers: await getAuthHeader() }),
+    create: async data => await axios.post(`/${route}`, data, { headers: await getAuthHeader() }),
+    update: async (id, data) => await axios.put(`/${route}/${id}`, data, { headers: await getAuthHeader() }),
+    delete: async id => await axios.delete(`/${route}/${id}`, { headers: await getAuthHeader() })
 });
 
 export { serviceBuilder };

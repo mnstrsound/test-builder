@@ -4,7 +4,7 @@ const mongoUrl = 'mongodb://localhost/ofc';
 let connection = false;
 
 export function initConnection() {
-    if (!connection) mongoose.connect(mongoUrl, { useMongoClient: true });
+    if (!connection) mongoose.connect(mongoUrl);
 }
 
 export function getConnection() {

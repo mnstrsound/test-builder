@@ -1,0 +1,11 @@
+.edit-question-input {
+    &__title-input,
+    &__content-input,
+    &__answer-input {
+        margin-bottom: 20px;
+    }
+
+    &__submit-question-button {
+        margin-top: 20px;
+    }
+}

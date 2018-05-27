@@ -1,0 +1,13 @@
+.test-root-page {
+    &__action-button {
+        margin-left: 10px;
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &__create-button {
+        margin-bottom: 20px;
+    }
+}

@@ -1,6 +1,6 @@
-const routeBuilder = (router, route, Model, additionalRoutes = []) => {
-    additionalRoutes.forEach((additionRoute) => {
-        router[additionRoute.method](`/${route}/${additionRoute.route}`, additionRoute.handler);
+const routeBuilder = (router, route, Model, overwritingRoutes = []) => {
+    overwritingRoutes.forEach((overwritingRoute) => {
+        router[overwritingRoute.method](`/${route}/${overwritingRoute.route}`, overwritingRoute.handler);
     });
 
     router
@@ -22,8 +22,8 @@ const routeBuilder = (router, route, Model, additionalRoutes = []) => {
             ctx.body = await model.save();
         })
         .del(`/${route}/:id`, async (ctx) => {
-            const { id } = ctx.params;
-            ctx.body = await Model.delete({ where: { id } });
+            const { id: _id } = ctx.params;
+            ctx.body = await Model.deleteOne({ _id });
         });
 };
 

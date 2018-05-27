@@ -1,0 +1,7 @@
+.test-edit-page {
+    &__edit-test-input,
+    &__edit-question-input,
+    &__select-users-input {
+        margin-bottom: 20px;
+    }
+}
